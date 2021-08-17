@@ -2,6 +2,7 @@ import {
     GET_CATEGORY_LIST,
     GET_CATEGORY_LIST_SUCCESS,
     GET_CATEGORY_LIST_FAIL,
+    // UPDATE_USER_INPUT,
 } from './constant'
 import get from 'lodash/get'
 const initialState = {
@@ -9,6 +10,7 @@ const initialState = {
     list:null,
     visible: false,
     loading: true,
+    // inputData:{}
 }
 
 export default function (state = initialState, action) {
@@ -34,6 +36,12 @@ export default function (state = initialState, action) {
                 ...state,
                 apiState: "error",
             }
+        // case UPDATE_USER_INPUT:
+        //     return{
+        //         ...state,
+        //         inputData:action.payload
+        //     } 
+
 
         default:
             return state
