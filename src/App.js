@@ -20,7 +20,7 @@ const App = (props) => {
         <Router history={history}>
           <Switch>
             {/* <Route exact path="/" component={BuilderList} history={history}/> */}
-            <Route exact path="/login" component={Login} history={history}/>
+            <Route exact path="/" component={Login} history={history}/>
             <Route exact from="/notice-board" render={(props) => <BillBoard {...props} history={history}/>} />
             <Route
               exact

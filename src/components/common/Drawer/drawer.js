@@ -13,6 +13,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withRouter } from "react-router-dom";
+import SongBoard from '../../../assets/SongBoard.svg';
+import noticeBoard from '../../../assets/noticeBoard.svg';
+import billBoard from '../../../assets/billBoard.svg';
+
 import {Container,AppBarContainer,DrawerContainer} from './style';
 
 // const useStyles = makeStyles({
@@ -27,17 +31,17 @@ const Drawer = props => {
   const itemsList = [
     {
       text: "Notice Board",
-      icon: <InboxIcon />,
+      icon: <img src={noticeBoard} alt="noticeBoard" />,
       onClick: () => history.push("/notice-board")
     },
     {
       text: "Song Board",
-      icon: <MailIcon />,
+      icon:  <img src={SongBoard} alt="SongBoard" />,
       onClick: () => history.push("/song-board")
     },
     {
       text: "Bill Board",
-      icon: <MailIcon />,
+      icon: <img src={billBoard} alt="billBoard" />,
       onClick: () => history.push("/bill-board")
     }
   ];

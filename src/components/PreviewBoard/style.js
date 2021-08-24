@@ -11,13 +11,13 @@ export const CardWrapper = styled.div`
   box-sizing: border-box;
   box-shadow: 0 2px 84px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  min-width: 500px;
+  width: 80%;
   height: 500px;
   display: flex;
 `;
 
 export const CardContent = styled.div`
-  flex: 3;
+  flex: 6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@ justify-content: center;
 `;
 
 export const CardHeading = styled.div`
-  font-size: 24px;
+  font-size: 36px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -46,7 +46,7 @@ export const CardHeading = styled.div`
 `;
 
 export const CardSubtext = styled.div`
-  font-size: 16px;
+  font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -63,12 +63,16 @@ export const SongCardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  flex: 3;
+  flex: 6;
   margin: 5px;
 `;
 
 export const SongCardContent = styled.div`
   flex: 1 1 30%; /*grow | shrink | basis */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size:24px;
 `;
 
 export const ImgContainer = styled.div`

@@ -12,11 +12,17 @@ export const BillContainer = styled.div`
   display: flex;
 `;
 
+export const LeftBoardWrapper = styled.div`
+background-color: #dcdde2;
+    flex: 1;
+`
+
 export const LeftBoard = styled.div`
   background-color: #eeeef1;
-  flex: 1;
   padding-left: 20px;
   padding-top: 40px;
   padding-right: 20px;
+  height: 100vh;
+  border-top-left-radius: 40px;
 `;
 

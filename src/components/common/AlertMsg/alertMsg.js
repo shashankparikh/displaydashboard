@@ -106,7 +106,7 @@ AlertMsg.defaultProps = {
   duration: 0,
   variant: "error",
   anchorOrigin: {
-    vertical: "top",
+    vertical: "bottom",
     horizontal: "center",
   },
 };

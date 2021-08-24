@@ -22,7 +22,7 @@ export const AppBarContainer = styled(AppBar)`
 
 export const DrawerContainer = styled(Drawer)`
 display: block;
-    min-width: 183px;
+    min-width: 180px;
     & .MuiDrawer-paper{
     background-color: #dcdde2;
 }
@@ -36,14 +36,38 @@ display: block;
 
 & .MuiListItem-root{
     margin:10px 0;
-
     &:hover,&:active{
-        // border-radius: 22px;
-        background-color: #2155f4;
-        color:#ffffff;
-     //   border-bottom-right-radius: 100%;
-        //   border-top-right-radius: 100%;
+        //  border-radius: 22px;
+        background-color: #2155f4 !important;
+        color:#ffffff !important;
+        //  border-bottom-right-radius: 100%;
+            // border-top-right-radius: 100%;
     }
 
 }
+// & .MuiListItemText-primary{
+//     font-size: 16px;
+//     font-weight: bold;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: normal;
+//     letter-spacing: normal;
+//     text-align: center;
+//     color: #141d3a;
+//     &:hover,&:active{
+//         // border-radius: 22px;
+//         background-color: #2155f4;
+//         color:#ffffff;
+//      //   border-bottom-right-radius: 100%;
+//         //   border-top-right-radius: 100%;
+//     }
+// }
+& .MuiListItemIcon-root{
+    min-width:56px;
+}
+&:after{
+    background-color: #eeeef1;
+    content: "";
+  
+  }
 `;

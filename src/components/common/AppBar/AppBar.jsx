@@ -17,6 +17,7 @@ import {
 import Logo from "../../../assets/logo.png";
 import { pageTypeKeys } from "./method";
 import get from "lodash/get";
+import PresentIcon from '../../../assets/present.svg'
 
 
 const Header = (props) => {
@@ -118,7 +119,7 @@ const Header = (props) => {
     if(localStorage){
       localStorage.removeItem("uid")
       window.triggerAlert('success','Successfully Logged out.',2000)
-      history.push('/login')
+      history.push('/')
 
     }
   }
@@ -135,7 +136,7 @@ const Header = (props) => {
         </div>
         <BtnContainer>
 
-        <SdBtn text={"Present"} onClick={() => handlePresentation()} />
+        <SdBtn text={"Present"} startIcon={<img src={PresentIcon} alt="PresentIcon" />} onClick={() => handlePresentation()} />
         <SdBtn text={"Logout"} onClick={() => handleLogout()} />
         </BtnContainer>
       </ToolBarContainer>

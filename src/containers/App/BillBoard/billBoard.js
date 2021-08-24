@@ -3,7 +3,7 @@ import Drawer from "../../../components/common/Drawer/drawer";
 import Header from "../../../components/common/AppBar/AppBar";
 import PreviewBoard from "../../../components/PreviewBoard/previewBoard";
 import Board from "../../../components/Board/board";
-import { Container, BillContainer, LeftBoard } from "./style";
+import { Container, BillContainer, LeftBoard,LeftBoardWrapper } from "./style";
 import { fetchTypeFromUrl } from "../../../constant";
 
 const BillBoard = (props) => {
@@ -25,12 +25,14 @@ const BillBoard = (props) => {
         {...props}
       />
       <BillContainer>
+        <LeftBoardWrapper>
         <LeftBoard>
           <Board
             fetchBoardColor={fetchBoardColor}
             {...props}
           />
         </LeftBoard>
+        </LeftBoardWrapper>
         <PreviewBoard
           backgroundColor={backgroundColor}
           {...props}
